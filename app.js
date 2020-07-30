@@ -1,9 +1,9 @@
 
 const spawn = require('child_process').spawn;
 
-let FilePath = 'https://r1---sn-cnoa-25ue.googlevideo.com/videoplayback?expire=1596115132&ei=XHQiX7KGF6WBlQTM8r6oAQ&ip=59.153.249.237&id=o-AGZnVHGdCpv9YmH7IGWwfpYI46xt65B9-azqzMTr7OIJ&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=1384.582&lmt=1580153129340580&fvip=1&fexp=23883098&beids=9466585&c=WEB&txp=5432432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAMSqjlk7ujnhXm366Vg4lZPNfDpXvtklrMRQ30_PibFwAiB3EwD1CPCbGqKPJFbFlqu8QU6WY7JYTTZpl3q0MGY26g%3D%3D&title=X%2BPlane%2B11%2B2020%2BMAX%2BRealism%2B%7C%2BUnited%2BAirlines%2B737-800%2Bfull%2Bflight%2Bto%2BLAX&cms_redirect=yes&mh=-T&mip=117.197.65.214&mm=31&mn=sn-cnoa-25ue&ms=au&mt=1596094286&mv=m&mvi=1&pl=20&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhANha7bv7Kuzlhz8f6AiYqV6fplGG51-hJVDopGQsDPsnAiApDWhpNGHnW4eItmV68C0MvccHZ9iFsvMOmD594adOXQ%3D%3D';  // Your Video File you want To loop through.
+let FilePath = 'https://r3---sn-npoeenee.googlevideo.com/videoplayback?expire=1596117344&ei=AH0iX8D6MMiY3LUP2desmA4&ip=110.78.147.76&id=o-AHaD45ippqt47lKL7AMeeZ2J2CvoXSa-LNSQ629P1Rn7&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=1578.306&lmt=1522616963814680&fvip=3&fexp=23883098&c=WEB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgZ9r8ja9Wz6qER4toREs0tXdcEwXKv-l7WSzdhXhJQQECIQCxt5tsq-u1cDfWA6ibLhIzc-5AiVJ3rd1ZLDp_rm_qMQ%3D%3D&contentlength=480881488&video_id=_6Krn7OeRn8&title=Far+Cry+5+-+Open+World+Free+Roam+Gameplay+%28PC+HD%29+%5B1080p60FPS%5D&rm=sn-j5u-iqtl7e,sn-npolk7s&req_id=6e8e3bcca0dba3ee&cm2rm=sn-bvvbax-jj0e7s,sn-h55ek7s&ipbypass=yes&redirect_counter=4&cms_redirect=yes&mh=-n&mip=117.197.65.214&mm=34&mn=sn-npoeenee&ms=ltu&mt=1596095717&mv=m&mvi=3&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgeeGFVJWULAE3S3g3Ndy4ldvnES9KjuKD8nm5srE6P94CIDH9acezOYNifCfGCmeYeJqkg4vNFFKRwXuX1sW0ncLj';  // Your Video File you want To loop through.
 
-let streamKey = 'icevq1';
+let streamKey = 'qHsxQl';
 
 //You Can Change the RTMP url as per your need. For Ex: YouTube, Twitch etc.
  
@@ -18,6 +18,6 @@ ffmpeg.on('exit', (statusCode) => {
 
 ffmpeg
   .stderr
-  .on('data', (err) => {
-    console.log('err:', new String(err))
+  .on('data', (task) => {
+    console.log('Task:', new String(task))
   })
