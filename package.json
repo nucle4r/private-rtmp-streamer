@@ -1,0 +1,11 @@
+{
+  "name": "node-ffmpeg-live",
+  "version": "2.0.0",
+  "description": "Live Streams A video File through FFMPEG",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Singh Priyanshu",
+  "license": "ISC"
+}
